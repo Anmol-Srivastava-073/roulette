@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roulette</title>
+</head>
+<body>
+    <style>
+        body{
+            background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Users/anmolsrivastava073/js html css game/roulette-wheel-wallpaper-2560x1080_14.jpg");
+            background-size: cover;opacity: 0.8;
+
+        }
+        .Roulette{
+            font-size: 50px ;
+            padding-top: 50px;
+            color: gold;
+            text-align: center;
+        }
+        .tb{
+            height: 40px;
+            width: 300px;
+            text-align: center;
+            font-size: 30px;
+            border: 2px solid black;
+        }
+        .but1{
+            background-color: cyan;
+            color: black;
+            padding: 5px 20px;
+            border-radius: 15px;
+            height: 50px;
+            width: 200px;
+            font-size: 15px;
+
+        }
+        .c1{
+            height: 420px;
+            width: 700px;
+            margin: 100px 375px;
+            text-align: center;
+            border: 2px solid black;
+            background-color: rgb(112, 18, 18);
+            border-radius: 10px;
+            
+        }
+        .r1{
+            margin-top: 5px;
+            padding-bottom: 0px;
+            font-size: 50px;
+        }
+        .r2{
+            margin-top: ;
+            font-size: 30px;
+        }
+        .but1:active{
+            background-color: darkcyan;
+        }
+    </style>
+    <h1 class="Roulette">✨ROULETTE✨</h1>
+    <div class="c1">
+    <h1 class="ent">ENTER YOUR NUMBER(1-30)</h1>
+    <h1 class="ent2" id="ent2">Tries: </h1>
+    <input type="text" class="tb" id="fname" min="1" max="30">    
+    <h1 id="num12" class="r1">--</h1>
+    <h1 id="num11" class="r2">YOU LOSE!😕</h1>
+    <button id="but12" class="but1">Roll the Ball</button>
+    <script src="roulette.js"></script>
+</div>
+</body>
+</html>
