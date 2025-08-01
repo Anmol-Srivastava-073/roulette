@@ -20,6 +20,9 @@ but1.onclick= function(){
             win.textContent="YOU LOSE!😕";
         }
     }
+else{
+window.alert("Your message here");
+}
     
     
 }
