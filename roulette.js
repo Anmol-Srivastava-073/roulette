@@ -15,6 +15,7 @@ but1.onclick= function(){
         if(random==Number(cho.value)){
             win.textContent="YOU WIN!!🏆🤩";
             tryco=0;
+            cho=0;
         }
         else{
             win.textContent="YOU LOSE!😕";
