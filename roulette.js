@@ -21,7 +21,7 @@ but1.onclick= function(){
         }
     }
 else{
-window.alert("Your message here");
+window.alert("The Number Should be in between 1 - 30");
 }
     
     
