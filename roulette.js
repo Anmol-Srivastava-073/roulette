@@ -7,7 +7,7 @@ let win= document.getElementById("num11");
 let trydis= document.getElementById("ent2");
 let tryco=0;
 but1.onclick= function(){
-    if(cho.value>1 && cho.value<31){
+    if(cho.value>0 && cho.value<31){
         let random= Math.floor(Math.random()*30 + 1);
         num1.textContent = random;
         tryco++;
