@@ -5,6 +5,7 @@ let but1= document.getElementById("but12");
 let cho= document.getElementById("fname");
 let win= document.getElementById("num11");
 let trydis= document.getElementById("ent2");
+let winSound = document.getElementById("winSound");
 let tryco=0;
 but1.onclick= function(){
     if(cho.value>0 && cho.value<31){
@@ -13,6 +14,7 @@ but1.onclick= function(){
         tryco++;
         trydis.textContent= `Tries: ${tryco}`;
         if(random==Number(cho.value)){
+            winSound.play();
             win.textContent="YOU WIN!!🏆🤩";
             tryco=0;
             cho.value='';
