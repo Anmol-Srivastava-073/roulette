@@ -145,7 +145,66 @@
             padding: 20px 15px;
         }
     }
+     .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.6s ease;
+}
+
+.overlay-content {
+  text-align: center;
+  color: gold;
+}
+
+.overlay button {
+  margin-top: 20px;
+  padding: 12px 35px;
+  font-size: 1.5rem;
+  background: gold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.overlay button:hover {
+  transform: scale(1.05);
+}
+
+.overlay.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.blurred {
+  filter: blur(5px);
+  transition: filter 0.6s ease;
+}
+
+.clear {
+  filter: blur(0);
+}
 </style>
+    <body>
+  <div id="overlay" class="overlay">
+    <div class="overlay-content">
+      <h1>Welcome to Spin Roulette 🎰</h1>
+      <button id="playBtn">Play</button>
+    </div>
+  </div>
+
+  <div id="mainContent" class="blurred">
     <audio id="bgSound" src="dreamy-slow-edm-263909.mp3" loop></audio>
     <h1 class="Roulette">✨ROULETTE✨</h1>
     <div class="c1">
@@ -156,7 +215,10 @@
     <audio id="winSound" src="mixkit-winning-notification-2018.wav" preload="auto"></audio>
     <h1 id="num11" class="r2">👾START👾</h1>
     <button id="but12" class="but1">Roll the Ball</button>
-    <script src="roulette.js"></script>
+  </div>
+   <script src="roulette.js"></script>
+</body>
+    
 </div>
 </body>
 </html>
