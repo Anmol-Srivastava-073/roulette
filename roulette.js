@@ -29,7 +29,7 @@ but1.onclick= function(){
             cho.value='';
         }
         else{
-            win.textContent="YOU LOSE!😕";
+            win.textContent="BAD LUCK IT SEEMS😗...RETRY?👇🏻";
         }
     }
 else{
