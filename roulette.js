@@ -10,7 +10,7 @@ let tryco=0;
 let musicStarted = false;
 cho.onclick= function(){
     if (!musicStarted) {
-        bgSound.volume = 0.6;
+        bgSound.volume = 1;
         bgSound.play(); 
         musicStarted = true;
     }
